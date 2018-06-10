@@ -31,3 +31,26 @@ function addtext2()
    window.location.assign('http://google.com')
      }
 /* Task 4 using jQuery */
+
+
+
+$('#addTextj').click(function(){
+    $('#task4a').append("<div>Hello World</div>");
+});
+
+$('#red').click(function(){
+    $('body').css("background-color","red");
+});
+
+$('#green').click(function(){
+    $('body').css("background-color","green");
+});
+
+ 
+ 
+$('#sum').click(function(){
+    var num1 = $('#num1').val();
+      var num2 = $('#num2').val();
+    var sum = Number(num1)+Number(num2);
+    $('#answer').text(sum);
+});
